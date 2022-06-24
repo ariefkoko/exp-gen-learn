@@ -4,5 +4,24 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.flex {
+  display: flex;
+}
+
+.num-com {
+  margin-left: 4px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment input,
+.comment button {
+  width: 200px;
+  margin-bottom: 6px;
 }

@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>M Arief Renaldy</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="flex">
+      <h1>Komentar</h1>
+      <p class="num-com"><%= comments.length %></p>
+    </div>
+    <div>
+      <form method="POST" action="/add-comment" class="comment">
+        <input type="text" name="nama" placeholder="nama" />
+        <input type="text" name="text" placeholder="text" />
+        <button type="submit">submit</button>
+      </form>
+    </div>
+
+    <ul>
+      <% comments.forEach((e)=> { %>
+      <li>
+        <h3><%= e.nama %></h3>
+        <p><%= e.text %></p>
+      </li>
+      <% }) %>
+    </ul>
   </body>
 </html>
