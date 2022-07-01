@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
+    <div>
+      <h1>Counter</h1>
+      <p><%= counter %></p>
+      <form method="POST" action="/increase-counter" class="comment">
+        <button type="submit">increase-counter</button>
+      </form>
+    </div>
+
     <div class="flex">
       <h1>Komentar</h1>
       <p class="num-com"><%= comments.length %></p>
