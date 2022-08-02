@@ -3,7 +3,7 @@ var router = express.Router();
 
 const cyd = (date) => {
   let newDate = new Date(date);
-  newDate.setDate(date.getDate() - 1);
+  newDate.setDate(newDate.getDate() - 1);
   return { st: date, et: newDate };
 };
 
