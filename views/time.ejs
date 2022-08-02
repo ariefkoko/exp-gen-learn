@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>M Arief Renaldy</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Time</h1>
+    <p>st : <%= st.toISOString() %> | <%= st.getTime() %> | <%= st %></p>
+    <p>et : <%= et.toISOString() %> | <%= et.getTime() %> | <%= et %></p>
+
+    <form method="POST" action="time/get-time" class="comment">
+      <button type="submit">Get Time</button>
+    </form>
+  </body>
+</html>
